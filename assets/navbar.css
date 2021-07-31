@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efefff;
+  font-family: 'Catamaran', sans-serif;
+}
+
+nav {
+  width: calc(100% - 20px);
+  padding: 0 10px;
+  height: 60px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px #e9e9e9;
+          box-shadow: 2px 2px 5px #e9e9e9;
+}
+
+nav ul {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  padding-top: 5px;
+  width: 25%;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: #1e6ce2;
+  font-weight: bold;
+}
+
+nav ul li a:not(.button-active):hover {
+  background-color: rgba(240, 240, 255, 0.842);
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.button-active {
+  background-color: #d5e6ff;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-animation: 1s button-animation ease forwards;
+          animation: 1s button-animation ease forwards;
+}
+
+@-webkit-keyframes button-animation {
+  0% {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  100% {
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+  }
+}
+
+@keyframes button-animation {
+  0% {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  100% {
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

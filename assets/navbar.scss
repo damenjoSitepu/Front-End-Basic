@@ -1,0 +1,72 @@
+* {
+    margin :0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(239, 239, 255);
+    font-family: 'Catamaran', sans-serif; 
+}
+
+nav {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(233, 233, 233);
+    
+
+    ul {
+        display: inline-block;
+        display: flex;
+        li {
+            padding-top: 5px;
+            width: 25%;
+            display: inline-block;
+
+            a {
+                
+
+
+                display: block;
+                
+                height: 50px;
+                line-height: 50px;
+                text-decoration: none;
+                text-align: center;
+                color: rgb(30, 108, 226);
+                font-weight: bold;
+
+                &:not(.button-active):hover {
+                    background-color: rgba(240, 240, 255, 0.842);
+                    border-top-right-radius: 75px;
+                    border-bottom-left-radius: 75px;
+                    transition: .3s ease;
+                }
+            }
+        }
+    }
+}
+
+// Untuk toggle button saat aktif
+.button-active {
+    background-color: rgb(213, 230, 255);
+    
+    transition: .5s ease;
+    animation: 1s button-animation ease forwards;
+    
+}
+
+// Keyframe
+
+@keyframes button-animation {
+    0% {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    100% {
+        border-top-right-radius: 75px;
+        border-bottom-left-radius: 75px;
+    }
+}
