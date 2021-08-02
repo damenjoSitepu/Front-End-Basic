@@ -11,4 +11,37 @@ $(document).ready(function () {
         $(this).addClass("button-active");
 
     });
+
+
+
+    $(".navFlexDiv").click(function (e) {
+        $(".rowActiveFirst").remove();
+
+        $(".navFlexDiv").each(function (e) {
+            $(this).find(".hoverableDiv").remove();
+        });
+
+        let activeWidth = $(this).innerWidth();
+        let itemPos = $(this).position();
+        $(".progression").css({
+            "left": itemPos.left + "px",
+            "width": activeWidth + "px"
+        });
+
+        $(this).prepend(`
+        <div class="hoverableDiv">
+                <div class="hoverableDiv1"></div>
+                <div class="hoverableDiv2"></div>
+                <div class="hoverableDiv3"></div>
+                <div class="hoverableDiv4"></div>
+            </div>
+        `);
+
+        // text active
+        $(".navFlexDiv").not(this).each(function (i) {
+            $(this).children("p").removeClass("text-active");
+        });
+
+        $(this).children("p").addClass("text-active");
+    });
 });

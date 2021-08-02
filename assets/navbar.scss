@@ -70,3 +70,111 @@ nav {
         border-bottom-left-radius: 75px;
     }
 }
+
+// Navbar more complex side
+
+.navFlex {
+    display: flex;
+    position: relative;
+    width: calc(100% - 20px);
+
+    .text-active {
+        color: rgb(27, 150, 221);
+    }
+
+    .progression {
+      height:100%;
+      display:inline-block;
+      position:absolute;
+      left:0px;
+      top:0px;
+      z-index:1;
+      transition-duration:0.6s;
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      border-bottom: 3px solid rgb(3, 163, 255);
+    }
+
+    .rowActiveFirst {
+        position:absolute;
+        bottom: -8px;
+        width: 100%;
+        z-index:1;
+        border-bottom: 3px solid rgb(3, 163, 255);
+    }
+
+    .navFlexDiv {
+        position: relative;
+        width: 25%;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 5px;
+        cursor: pointer;
+        text-align: center;
+        color: rgb(61, 61, 61);
+        font-weight: bold;
+
+        &:hover {
+            border-radius: 20px;
+            background-color: rgb(241, 250, 255);
+        }
+
+        .hoverableDiv {
+            
+            position: absolute;
+            z-index: 0;
+        
+            width: 100%;
+            display: grid;
+
+            grid-template-areas: "hoverableDiv1 hoverableDiv2"
+                                "hoverableDiv3 hoverableDiv4";
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 25px 25px;
+
+
+            @keyframes hovDiv1 {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: .2;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            .hoverableDiv1 {
+                animation: .3s hovDiv1 ease forwards;
+                padding-top: -10px;
+                border-top-left-radius: 20px;
+                grid-area: hoverableDiv1;
+                background-color: rgb(26, 105, 209);
+            }
+
+            .hoverableDiv2 {
+                animation: .5s hovDiv1 ease forwards;
+                border-top-right-radius: 20px;
+                grid-area: hoverableDiv2;
+                background-color: rgb(255, 61, 61);
+            }
+            
+            .hoverableDiv3 {
+                animation: .7s hovDiv1 ease forwards;
+                border-bottom-left-radius: 20px;
+                grid-area: hoverableDiv3;
+                background-color: rgb(195, 73, 243);
+            }
+
+            .hoverableDiv4 {
+                animation: .9s hovDiv1 ease forwards;
+                border-bottom-right-radius: 20px;
+                grid-area: hoverableDiv4;
+                background-color: rgb(219, 124, 14);
+            }
+        }
+    }
+}
