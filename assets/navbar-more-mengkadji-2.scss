@@ -1,0 +1,201 @@
+// Navbar more complex side
+* {
+    margin :0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(239, 239, 255);
+    font-family: 'Catamaran', sans-serif; 
+}
+
+nav {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(233, 233, 233);
+}
+
+.navFlex {
+    display: flex;
+    position: relative;
+    width: calc(100% - 20px);
+
+    .text-active {
+        color: rgb(255, 3, 3);
+    }
+
+    .progression {
+      height:100%;
+      display:inline-block;
+      position:absolute;
+      left:0px;
+      top:0px;
+      z-index:1;
+      transition-duration:0.6s;
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      border-bottom: 3px solid rgb(255, 3, 3);
+    }
+
+    .rowActiveFirst {
+        position:absolute;
+        bottom: -8px;
+        width: 100%;
+        z-index:1;
+        border-bottom: 3px solid rgb(255, 3, 3);
+    }
+
+    .navFlexDiv {
+        position: relative;
+        width: 25%;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 5px;
+        cursor: pointer;
+        text-align: center;
+        color: rgb(61, 61, 61);
+        font-weight: bold;
+
+        &:hover {
+            border-radius: 20px;
+            background-color: rgb(241, 250, 255);
+        }
+
+        .hoverableDiv {
+            
+            position: absolute;
+            z-index: 0;
+        
+            width: 100%;
+            display: grid;
+
+            grid-template-areas: "hoverableDiv1 hoverableDiv2 hoverableDiv3 hoverableDiv4 hoverableDiv5 hoverableDiv6 hoverableDiv7"
+                                "hoverableDiv8 hoverableDiv9 hoverableDiv10 hoverableDiv11 hoverableDiv12 hoverableDiv13 hoverableDiv14";
+
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 25px 25px;
+
+
+            @keyframes hovDiv1 {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: .25;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            .hoverableDiv1 {
+                animation: .2s hovDiv1 ease forwards;
+                padding-top: -10px;
+                border-top-left-radius: 20px;
+                grid-area: hoverableDiv1;
+                background-color: rgb(255, 0, 34);
+            }
+
+            .hoverableDiv2 {
+                animation: .3s hovDiv1 ease forwards;
+                grid-area: hoverableDiv2;
+                background-color: rgb(253, 30, 60);
+            }
+
+            .hoverableDiv3 {
+                animation: .4s hovDiv1 ease forwards;
+                grid-area: hoverableDiv3;
+                background-color: rgb(253, 53, 80);
+            }
+            
+            .hoverableDiv4 {
+                animation: .5s hovDiv1 ease forwards;
+                grid-area: hoverableDiv4;
+                background-color: rgb(252, 71, 95);
+            }
+
+            .hoverableDiv5 {
+                animation: .6s hovDiv1 ease forwards;
+                grid-area: hoverableDiv5;
+                background-color: rgb(255, 95, 116);
+            }
+
+            .hoverableDiv6 {
+                animation: .7s hovDiv1 ease forwards;
+                grid-area: hoverableDiv6;
+                background-color: rgb(253, 117, 136);
+            }
+
+            .hoverableDiv7 {
+                animation: .8s hovDiv1 ease forwards;
+                grid-area: hoverableDiv7;
+                border-top-right-radius: 20px;
+                background-color: rgb(255, 138, 154);
+            }
+
+
+            .hoverableDiv8 {
+                animation: .8s hovDiv1 ease forwards;
+                padding-top: -10px;
+                border-bottom-left-radius: 20px;
+                grid-area: hoverableDiv8;
+                background-color: rgb(255, 138, 154);
+            }
+
+            .hoverableDiv9 {
+                animation: .7s hovDiv1 ease forwards;
+                grid-area: hoverableDiv9;
+                background-color: rgb(253, 117, 136);
+            }
+
+            .hoverableDiv10 {
+                animation: .6s hovDiv1 ease forwards;
+                grid-area: hoverableDiv10;
+                background-color: rgb(255, 95, 116);
+            }
+            
+            .hoverableDiv11 {
+                animation: .5s hovDiv1 ease forwards;
+                grid-area: hoverableDiv11;
+                background-color: rgb(252, 71, 95);
+            }
+
+            .hoverableDiv12 {
+                animation: .4s hovDiv1 ease forwards;
+                grid-area: hoverableDiv12;
+                background-color: rgb(253, 53, 80);
+            }
+
+            .hoverableDiv13 {
+                animation: .3s hovDiv1 ease forwards;
+                grid-area: hoverableDiv13;
+                background-color: rgb(253, 30, 60);
+            }
+
+            .hoverableDiv14 {
+                animation: .2s hovDiv1 ease forwards;
+                grid-area: hoverableDiv14;
+                border-bottom-right-radius: 20px;
+                background-color: rgb(255, 0, 34);
+            }
+
+
+            // .hoverableDiv3 {
+            //     animation: .7s hovDiv1 ease forwards;
+            //     border-bottom-left-radius: 20px;
+            //     grid-area: hoverableDiv3;
+            //     background-color: rgb(255, 153, 167);
+            // }
+
+            // .hoverableDiv4 {
+            //     animation: .9s hovDiv1 ease forwards;
+            //     border-bottom-right-radius: 20px;
+            //     grid-area: hoverableDiv4;
+            //     background-color: rgb(185, 32, 53);
+            // }
+        }
+    }
+}

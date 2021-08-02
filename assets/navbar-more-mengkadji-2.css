@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efefff;
+  font-family: 'Catamaran', sans-serif;
+}
+
+nav {
+  width: calc(100% - 20px);
+  padding: 0 10px;
+  height: 60px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px #e9e9e9;
+          box-shadow: 2px 2px 5px #e9e9e9;
+}
+
+.navFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: calc(100% - 20px);
+}
+
+.navFlex .text-active {
+  color: #ff0303;
+}
+
+.navFlex .progression {
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-bottom: 3px solid #ff0303;
+}
+
+.navFlex .rowActiveFirst {
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 3px solid #ff0303;
+}
+
+.navFlex .navFlexDiv {
+  position: relative;
+  width: 25%;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: #3d3d3d;
+  font-weight: bold;
+}
+
+.navFlex .navFlexDiv:hover {
+  border-radius: 20px;
+  background-color: #f1faff;
+}
+
+.navFlex .navFlexDiv .hoverableDiv {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "hoverableDiv1 hoverableDiv2 hoverableDiv3 hoverableDiv4 hoverableDiv5 hoverableDiv6 hoverableDiv7" "hoverableDiv8 hoverableDiv9 hoverableDiv10 hoverableDiv11 hoverableDiv12 hoverableDiv13 hoverableDiv14";
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 25px 25px;
+      grid-template-rows: 25px 25px;
+}
+
+@-webkit-keyframes hovDiv1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hovDiv1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv1 {
+  -webkit-animation: .2s hovDiv1 ease forwards;
+          animation: .2s hovDiv1 ease forwards;
+  padding-top: -10px;
+  border-top-left-radius: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hoverableDiv1;
+  background-color: #ff0022;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv2 {
+  -webkit-animation: .3s hovDiv1 ease forwards;
+          animation: .3s hovDiv1 ease forwards;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: hoverableDiv2;
+  background-color: #fd1e3c;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv3 {
+  -webkit-animation: .4s hovDiv1 ease forwards;
+          animation: .4s hovDiv1 ease forwards;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: hoverableDiv3;
+  background-color: #fd3550;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv4 {
+  -webkit-animation: .5s hovDiv1 ease forwards;
+          animation: .5s hovDiv1 ease forwards;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: hoverableDiv4;
+  background-color: #fc475f;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv5 {
+  -webkit-animation: .6s hovDiv1 ease forwards;
+          animation: .6s hovDiv1 ease forwards;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: hoverableDiv5;
+  background-color: #ff5f74;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv6 {
+  -webkit-animation: .7s hovDiv1 ease forwards;
+          animation: .7s hovDiv1 ease forwards;
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: hoverableDiv6;
+  background-color: #fd7588;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv7 {
+  -webkit-animation: .8s hovDiv1 ease forwards;
+          animation: .8s hovDiv1 ease forwards;
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: hoverableDiv7;
+  border-top-right-radius: 20px;
+  background-color: #ff8a9a;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv8 {
+  -webkit-animation: .8s hovDiv1 ease forwards;
+          animation: .8s hovDiv1 ease forwards;
+  padding-top: -10px;
+  border-bottom-left-radius: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: hoverableDiv8;
+  background-color: #ff8a9a;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv9 {
+  -webkit-animation: .7s hovDiv1 ease forwards;
+          animation: .7s hovDiv1 ease forwards;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: hoverableDiv9;
+  background-color: #fd7588;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv10 {
+  -webkit-animation: .6s hovDiv1 ease forwards;
+          animation: .6s hovDiv1 ease forwards;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: hoverableDiv10;
+  background-color: #ff5f74;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv11 {
+  -webkit-animation: .5s hovDiv1 ease forwards;
+          animation: .5s hovDiv1 ease forwards;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: hoverableDiv11;
+  background-color: #fc475f;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv12 {
+  -webkit-animation: .4s hovDiv1 ease forwards;
+          animation: .4s hovDiv1 ease forwards;
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: hoverableDiv12;
+  background-color: #fd3550;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv13 {
+  -webkit-animation: .3s hovDiv1 ease forwards;
+          animation: .3s hovDiv1 ease forwards;
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: hoverableDiv13;
+  background-color: #fd1e3c;
+}
+
+.navFlex .navFlexDiv .hoverableDiv .hoverableDiv14 {
+  -webkit-animation: .2s hovDiv1 ease forwards;
+          animation: .2s hovDiv1 ease forwards;
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+  grid-area: hoverableDiv14;
+  border-bottom-right-radius: 20px;
+  background-color: #ff0022;
+}
+/*# sourceMappingURL=navbar-more-mengkadji-2.css.map */

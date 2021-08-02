@@ -34,6 +34,16 @@ $(document).ready(function () {
                 <div class="hoverableDiv2"></div>
                 <div class="hoverableDiv3"></div>
                 <div class="hoverableDiv4"></div>
+                <div class="hoverableDiv5"></div>
+                <div class="hoverableDiv6"></div>
+                <div class="hoverableDiv7"></div>
+                <div class="hoverableDiv8"></div>
+                <div class="hoverableDiv9"></div>
+                <div class="hoverableDiv10"></div>
+                <div class="hoverableDiv11"></div>
+                <div class="hoverableDiv12"></div>
+                <div class="hoverableDiv13"></div>
+                <div class="hoverableDiv14"></div>
             </div>
         `);
 
