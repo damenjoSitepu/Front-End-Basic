@@ -184,7 +184,7 @@ nav ul li a:not(.button-active):hover {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: hoverableDiv2;
-  background-color: #ff3d3d;
+  background-color: #1f7ffc;
 }
 
 .navFlex .navFlexDiv .hoverableDiv .hoverableDiv3 {
@@ -194,7 +194,7 @@ nav ul li a:not(.button-active):hover {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: hoverableDiv3;
-  background-color: #c349f3;
+  background-color: #64a5fa;
 }
 
 .navFlex .navFlexDiv .hoverableDiv .hoverableDiv4 {
@@ -204,6 +204,6 @@ nav ul li a:not(.button-active):hover {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: hoverableDiv4;
-  background-color: #db7c0e;
+  background-color: #5c80af;
 }
 /*# sourceMappingURL=navbar.css.map */

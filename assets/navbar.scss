@@ -159,21 +159,21 @@ nav {
                 animation: .5s hovDiv1 ease forwards;
                 border-top-right-radius: 20px;
                 grid-area: hoverableDiv2;
-                background-color: rgb(255, 61, 61);
+                background-color: rgb(31, 127, 252);
             }
             
             .hoverableDiv3 {
                 animation: .7s hovDiv1 ease forwards;
                 border-bottom-left-radius: 20px;
                 grid-area: hoverableDiv3;
-                background-color: rgb(195, 73, 243);
+                background-color: rgb(100, 165, 250);
             }
 
             .hoverableDiv4 {
                 animation: .9s hovDiv1 ease forwards;
                 border-bottom-right-radius: 20px;
                 grid-area: hoverableDiv4;
-                background-color: rgb(219, 124, 14);
+                background-color: rgb(92, 128, 175);
             }
         }
     }
